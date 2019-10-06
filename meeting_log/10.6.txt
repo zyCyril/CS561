@@ -1,0 +1,38 @@
+Database
+
+Analyze whether to put all user information in the user table or to make another user account
+How to ensure the uniqueness of the warehouse, not being accessed by multiple users at the same time£¿
+
+user
+user_id 			int(10)
+root:				tinyint(1) [Admin root : 0, renter : 2, lender: 1] 
+username			varchar(150)
+password			varchar(128)
+last_login			datetime(6)
+date_joined			datetime(6)
+first_name			varchar(30)
+last_name			varchar(150)
+email				varchar(254)
+
+renter_account
+user_id ->User(user_id)	int(10)
+balance			float(200)
+rented_warehouse
+
+warehouse
+warehouse_id			int(11)
+warehouse_name 		varchar(150)
+warehouse_size		int(10)
+warehouse_desc		varchar(254)
+warehouse_image
+warehouse_price
+warehouse_category		varchar(150)
+warehouse_isAvailable 	tinyint(1)
+
+rent_order
+order_id			int(10)
+user_id			int(10)
+order_date			datetime(6)
+
+
+Not complete
