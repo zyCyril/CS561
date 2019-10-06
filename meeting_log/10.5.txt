@@ -1,0 +1,9 @@
+Discussion Abstract
+Continue to re-analyze and improve the user story, and combine the overall user story to build a database analysis.
+It is expected that the database will be built as a whole on weekends.
+The database table is based on the user story of sprint 
+1.  not the whole user story.
+Database
+User（Admin root : 0, renter : 1, lender: 2)
+Warehouse
+Orders
