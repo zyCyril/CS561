@@ -1,0 +1,10 @@
+Finish the first sprint 1 tables
+total 4
+user
+renter_account
+warehouse
+rent_order
+all design upload in the pdf, but the navicat using Chinese version
+so the Screen shout and local time may have some problem, it will
+fix in the next version
+in short, the very berif database is built. 
