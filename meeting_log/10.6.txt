@@ -1,7 +1,7 @@
 Database
 
 Analyze whether to put all user information in the user table or to make another user account
-How to ensure the uniqueness of the warehouse, not being accessed by multiple users at the same time£¿
+How to ensure the uniqueness of the warehouse, not being accessed by multiple users at the same timeÂ£Â¿
 
 user
 user_id 			int(10)
@@ -17,7 +17,7 @@ email				varchar(254)
 renter_account
 user_id ->User(user_id)	int(10)
 balance			float(200)
-rented_warehouse
+rented_warehouse// need to complete
 
 warehouse
 warehouse_id			int(11)
@@ -28,6 +28,9 @@ warehouse_image
 warehouse_price
 warehouse_category		varchar(150)
 warehouse_isAvailable 	tinyint(1)
+
+warehouse_currentowenr_use_id int(10)
+//use it to implement own the warehouse
 
 rent_order
 order_id			int(10)
