@@ -1,0 +1,5 @@
+Meeting Abstract Log (2019.10.7)
+1. Split work
+2. Arrange task for everyone in the work, and set up the mission for everyone before 10.9
+3. Disscussed the UI design
+4. Discussed the Database design
