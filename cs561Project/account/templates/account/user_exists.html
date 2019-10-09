@@ -1,0 +1,7 @@
+{% extends "main.html" %}
+
+{% block title %}Sign up error{% endblock %}
+{% block content %}
+    <h1>Oh!</h1>
+    <p>This user already exists, please try to use a different username. You can click here to <a href="{% url "signup" %}">sign up</a>.</p>
+{% endblock %}
