@@ -1,0 +1,4 @@
+1. clearly split the work again, and explain the steps
+2. Talking about all the tools we are using for the website
+3. Help everyone set up the local enviroment 
+4. Making sure all the tools are capable for everyone and making sure all the tools are in same version. 
