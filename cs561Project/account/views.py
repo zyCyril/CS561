@@ -51,7 +51,7 @@ def signup(request):
 
 
 
-#     return render(request, 'account/index.html')
+
 class logInWithEmailorUserName:
     def authenticate(self, request, username=None, password=None):
         try:
