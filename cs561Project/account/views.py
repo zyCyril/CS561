@@ -10,7 +10,6 @@ from django.contrib.auth import authenticate, login
 from django.contrib.auth.hashers import (
     check_password, is_password_usable, make_password,
 )
-# Create your views here.
 
 def index(request):
     return render(request, 'account/index.html')
@@ -48,10 +47,6 @@ def signup(request):
         'account/sign-up-page.html',
         {'new_user_sign_up': new_user_sign_up}
     )
-
-
-
-
 class logInWithEmailorUserName:
     def authenticate(self, request, username=None, password=None):
         try:
