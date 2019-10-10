@@ -2,12 +2,17 @@
 {% block title %}Ware House System{% endblock %}
 {% block content %}
 <h1>Payment Details</h1>
-    <hr/>
-        <form>
-       <ul><input type="input, textarea" placeholder="Please input the total price" name="uesd01"/></ul> 
-       <ul><input type="input, textarea" placeholder="Card Number" name="uesd02"/></ul>
-        <ul><input type="input, textarea" placeholder="Expiration Date(MM/YY)" name="uesd01"/></ul>
-        <ul><input type="input, textarea" placeholder="Security Code" name="uesd02"/></ul>
-        <br><br><br><br><br><br><br><br><button type="submit">Pay</button>
-        </form>
+     <hr/><div board = 1, body style = "background-color: white">
+        <form>  
+       <ul><input type="input, textarea" placeholder="Please input the total price" name="uesd01"/></ul> <br>
+
+       <ul><input type="input, textarea" placeholder="Card Number" name="uesd02"/></ul><br>
+        <ul><input type="input, textarea" placeholder="Expiration Date(MM/YY)" name="uesd01"/></ul><br>
+        <ul><input type="input, textarea" placeholder="Security Code" name="uesd02"/></ul><br>
+        <br>
+        <button type="submit">Pay</button><button type="submit">Cancel</button>
+        
+        </form> 
+    </div>
 {% endblock %}
+
