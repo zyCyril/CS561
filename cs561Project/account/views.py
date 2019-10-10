@@ -49,7 +49,7 @@ def signup(request):
         {'new_user_sign_up': new_user_sign_up}
     )
 
-# def login(request):
+
 
 #     return render(request, 'account/index.html')
 class logInWithEmailorUserName:
