@@ -1,0 +1,14 @@
+1.Group analyze the quality attributes which is very important for
+the project
+Maintainability
+Usability
+Portability
+This three part will be more thought for the project
+2. give to the non-functional requirements quality attributes.
+Efficiency
+Flexibility
+3. Check the sign in and sign up web page, and design for the renter
+view page. 
+4. Create the UI_design for group member to esay upload their design.
+5. Rethink about the database, the random password need be save in 
+warehouse table or create a new password table to storage it.
