@@ -16,6 +16,7 @@ def index(request):
 @login_required
 def board(request):
     return render(request, 'account/board.html')
+@login_required
 def pay(request):
     return render(request, 'account/Payment-page.html')
 def signup(request):
