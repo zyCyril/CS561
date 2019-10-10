@@ -1,36 +1,3 @@
-{% comment %} {% load staticfiles %}
-<!DOCTYPE html>
-<html>
-<head>
-  <title>{% block title %}{% endblock %}</title>
-  <link href="{% static "css/style.css" %}" rel="stylesheet">
-</head>
-<body>
-  <div id="header">
-    <span class="logo">Remote Control Automatic Door System</span>
-    {% if request.user.is_authenticated %}
-      <ul class="menu">
-        <li>
-          <a href="{% url "#" %}">My board</a>
-        </li>
-      </ul>
-    {% endif %}
-    <span class="user">
-      {% if request.user.is_authenticated %}
-        Hello  <a href="{% url "profile" request.user.username %}"><u>{{ request.user.first_name }}</u>,</a>
-        <a href="{% url "#" %}"><u>Logout</u></a>
-        /<a href="{% url "#" %}"><u>Change Password</u></a>
-      {% else %}
-        <a><u>Log-in</u></a>
-      {% endif %}
-    </span>
-  </div>
-  <div id="content">
-    {% block content %}
-    {% endblock %}
-  </div>
-</body>
-</html> {% endcomment %}
 
 {% load staticfiles %}
 <!DOCTYPE html>
@@ -45,21 +12,14 @@
     {% if request.user.is_authenticated %}
       <ul class="menu">
         <li>
-          <a href="{% url "dashboard" %}">My dashboard</a>
-        </li>
-        <li>
-          <a href="{% url "images:image_list" %}">Images</a>
-        </li>
-        <li>
-          <a href="{% url "user_list" %}">Users</a>
+          <a href="{% url "board" %}">My dashboard</a>
         </li>
       </ul>
     {% endif %}
     <span class="user">
       {% if request.user.is_authenticated %}
-        Hello  <a href="{% url "profile" request.user.username %}"><u>{{ request.user.first_name }}</u>,</a>
+         Hello  {{request.user.username }}>{{ request.user.first_name }},
         <a href="{% url "logout" %}"><u>Logout</u></a>
-        /<a href="{% url "password_change" %}"><u>Change Password</u></a>
       {% else %}
         <a href="{% url "login" %}"><u>Log-in</u></a>
       {% endif %}

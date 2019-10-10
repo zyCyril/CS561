@@ -10,6 +10,10 @@ from django.contrib.auth.models import AbstractUser
 from django.contrib.auth.hashers import (
     check_password, is_password_usable, make_password,
 )
+from django.conf import settings
+from django.utils.module_loading import import_string
+from django.core.exceptions import ImproperlyConfigured
+
 class RentOrder(models.Model):
     order_id = models.IntegerField(primary_key=True)
     user_id = models.IntegerField(blank=True, null=True)
@@ -49,6 +53,12 @@ class User(models.Model):
     def set_password(self,raw_password):
         self.password = make_password(raw_password)
         self._password = raw_password
+    def new_check_password(self,password,ex_pass):
+        return check_password(password,ex_pass)
+    def is_active(self):
+        return True
+    def is_authenticated(self):
+        return True
 
 
 

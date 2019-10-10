@@ -4,13 +4,10 @@
 
 {% block content %}
   <h1>Log-in</h1>
-  <p>you can log in this system in this page, or you can <a href="{% url "register" %}">register an account</a></p>
+  <p>if you do not have a account, you can <a href="{% url "signup" %}">sign up</a></p>
   <form action="." method="post">
     {{ form.as_p }}
     {% csrf_token %}
     <p><input type="submit" value="Log in"></p>
   </form>
-  <li><a href="{% url "social:begin" "google-oauth2" %}">Login with Google</a></li>
-  <li><a href="{% url "social:begin" "github" %}">Login with GitHub</a></li>
-  
 {% endblock %}
